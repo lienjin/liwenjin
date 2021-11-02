@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            /* 绝对定位 相对于浏览器的四个角定位 必须是父容器没有定位属性的情况*/
+            position: absolute;
+            /* top: 0;
+            右上角
+            right: 0; */
+
+            /* top: 0;
+            左上角
+            left: o; */
+
+            /* bottom: 0;
+            左下角
+            left: 0; */
+
+            bottom: 0;
+            /* 右下角 */
+            right: 0;
+
+            /* 固定定位 相对于浏览器窗口定位，滚动条滚动的时候，一直在固定位置*/
+            /* position: fixed;
+            right: 10px;
+            top: 200px; */
+
+            
+            
+
+        }
+        /* 子绝父相 有定位属性会随着父元素定位*/
+        .out-box{
+                width: 400px;
+                height: 100px;
+                background-color: red;
+                margin: 100px auto;
+                position: relative;
+            }
+        .in-box{
+            width: 100px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* z-index必须要定位属性，谁的层数越高谁在前面 */
+            z-index: 11;
+        }
+        .inner-box{
+            width: 200px;
+            height: 150px;
+            background-color: pink;
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body style="height: 5000px;">
+    <!-- <div class="box1"></div> -->
+    <div class="out-box">
+        <div class="in-box"></div>
+        <div class="inner-box"></div>
+    </div>
+</body>
+</html>

@@ -6,7 +6,7 @@
 $(function() {
     /* 首页大图轮播 */
     $('#bannerInner').tyslide({
-        boxh:445,//盒子的高度
+        boxh:460,//盒子的高度
         w:1000,//盒子的宽度
         h:390,//图片的高度
         isShow:true,//是否显示控制器
