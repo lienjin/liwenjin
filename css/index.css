@@ -1022,7 +1022,6 @@
 /*=============== 10.jio ===============*/
 .footer{
     height: 500px;
-    background-color: #fff;
     margin-top: 34px;
 }
  .footer .top{
@@ -1039,10 +1038,11 @@
 }
 .footer .top-box ul{
     height: 75px;
+    /* width: 1200px; */
 }
 .footer .top-box ul li{
     height: 45px;
-    width: 180px;
+    width: 100px;
     float: left;
     line-height: 45px;
     margin-left: 240px;
@@ -1053,16 +1053,16 @@
     color: #fff;
     width:1000px;
     height:195px;
-        }
+}
 #nav td a{
     text-decoration:none;
-    color: #C1C1C1;
+    color: #333;
     text-align:center;
-    }
+}
 #nav td a:hover{
     text-decoration:none;
     color:#F30;
-    }
+}
 .footer .mit .sol{
     margin-top: 100px;
     height: 2px;
@@ -1080,10 +1080,11 @@
 }
 .footer .pri img{
     float: right;
-    margin-top: -235px;
-    width: 300px;
-    margin-right: 120px;
+    margin-top: -280px;
+    width: 150px;
+    margin-right: 195px;
 }
+
 /* 返回顶部 */
 .backToTop {
     width: 30px;
@@ -1100,5 +1101,88 @@
 .backToTop img {
     width: 100%;
     height: 100%;
+}
+/* 二维码 */
+.qr-code{
+    width: 40px;
+    height: 180px;
+    position: fixed;
+    top: 185px;
+    right: 0;
+}
+.qr-code p{
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+}
+.qr-code p img{
+    width: 100%;
+    height: 100%;
+}
+.qr-code p:nth-child(2){
+    height: 100px;
+    background-color: deeppink;
+}
+.qr-code div{
+    top: 40px;
+    position: absolute;
+    left: 0px;
+    z-index: -10;
+}
+/* 顶部搜索框 */
+.top-search-box{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color:rgb(255,123,0,0.8);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
+
+.top-search-box .search-box{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    background-color:#ff6700;
+    margin: 10px auto;
+    background-image: url(../img/bgicon.png);
+    background-repeat: no-repeat;
+    background-position-x:356px ;
+    background-position-y:-3px ;
+}
+.top-search-box .search-box input{
+    height: 26px;
+    width: 360px;
+    border: 2px solid #ff6700;
+    outline: none;
+    text-indent: 10px;
+}
+/* 楼层滚动样式 */
+.floor {
+    width: 40px;
+    height: 200px;
+    background-color:#f2f2f2;
+    position: fixed;
+    top: 200px;
+    left: -640px;
+    margin-left: 50%;
+
+}
+.floor li{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.floor li:hover{
+    width: 80px;
+    color: #fff;
+    background-color:#93d56f;
+}
+.floor li img{
+    width: 40px;
+    height: 40px;
 }
 
