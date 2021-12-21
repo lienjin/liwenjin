@@ -142,7 +142,7 @@ background-color: green;
 }
 .nav .category-menu .left-logo img {
 position: absolute;
-top: 0;
+top: -83px;
 left: 150;
 }
 .nav .category-menu ul {

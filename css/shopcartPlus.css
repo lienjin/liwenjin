@@ -155,113 +155,59 @@
     font-weight: 700;
 }
 
-
-/*================== 独家提供================== */
-.ez {
-    height: 546px;
-    margin: 50px auto;
+/* ================购物车================ */
+.shopcart {
+    height: 630px;
 }
-.ez .ez-title {
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 6px solid #ff6700;
-    background-color: #fff;
-    color: #ff6700;
+.shopcart h3 {
     font-size: 24px;
-    text-indent: 20px;
-}
-.ez .ez-title h1 {
-    font-weight: 200;
-}
-.ez .ez-title ul li {
-    float: left;
-    width: 100px;
-    font-size: 14px;
-    color: #333;
-}
-.ez .ez-title ul li.active {
-    background-color: #ff6700;
-    color: #fff;
-}
-.ez .ez-content {
-    width: 1200px;
-    height: 500px;
-}
-.ez-list {
-    width: 1200px;
-    height: 440px;
-}
-.ez-list p {
-    width: 200px;
-    height: 220px;
-    float: left;
-    border: 1px solid pink;
-    box-sizing: border-box;
-    text-align: center;
-}
-.ez-list p > img {
-    width: 80% !important;
-    height: 80% !important;
-}
-
-/* ===============猜你喜欢 ===============*/
-.guess-you-like {
-    width: 1200px;
-    height: 456px;
-    /* background-color: red; */
-}
-.guess-you-like-title {
-    height: 40px;
-    line-height: 40px;
-    font-size: 40px;
     color: #ff6700;
-    border-bottom: 6px solid #ff6700;
-    background-color: #fff;
     text-indent: 20px;
-}
-.guess-you-like-title h1 {
     font-weight: 500;
 }
-.guess-you-like-content {
-    width: 1200px;
+.shopcart table {
     height: 500px;
-    /* background-color: green; */
+    width: 1200px;
+    text-align: center;
+}
+.shopcart table thead tr th {
+    height: 60px;
+    background-color: #f1f1f1;
+}
+.shopcart .totalPrice {
+   height: 60px;
+   line-height: 60px;
+   font-size: 20px;
+   background-color: #f1f1f1;
+   margin-top: 20px;
+}
+.shopcart .totalPrice span {
+    margin-right: 150px;
+}
+ .shopcart .totalPrice span:first-of-type {
+    margin-left: 100px;
 } 
-
-/* 上下滑动 */
-/* .out-box {
-    overflow: hidden;
+.shopcart .totalPrice input {
+    margin-left: 10px;
 }
-.inner-box {
-    height: 1500px;
-    position: relative;
-    top: 0;
-} */
-
-
-/* 左右滑动 */
-.out-box {
-    overflow: hidden;
+.shopcart table button {
+    width: 20px;
+    height: 20px;
 }
-.inner-box {
-    width: 4800px;
-    position: relative;
-    left: 0;
+.shopcart table input {
+    width: 50px;
 }
-.guess-you-like-content li {
-    width: 1200px;
-    height: 500px;
-    float: left;
+.shopcart .totalPrice button {
+    background-color: #ff6700;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    width: 150px;
+    float: right;
+    border: none;
 }
-.guess-you-like-content li img {
-    width: 1200px;
-    height: 443px;
+.shopcart .totalPrice {
+    border: 1px solid rgb(163, 157, 157)
 }
-
-
-
-
-
 
 
 /* 11.=================尾部================= */
