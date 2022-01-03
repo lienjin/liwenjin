@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <mate name="viewport" content="width=device-width,initial-scale=1.0">
+        <mate http-equiv="X-UA-Compatible" content="ie=sdge">
+        <title></title>
+        <!-- iconfont.css -->
+        <link rel="stylesheet" href="/iconfont/iconfont.css">
+        <style>
+           .on {
+               font-size: 50px;
+               color: gold;
+           }
+           .half {
+            font-size: 50px;
+            color: gold;
+           }
+           .off {
+            font-size: 50px;
+            color: gray;
+           }
+            
+        </style>
+        </head>
+        <body>
+
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+
+            </div>
+
+            <div class="box3">
+
+            </div>
+            
+            
+        <!-- jquery.min.js -->
+        <script src="/js/jquery-1.11.0.js"></script>
+        <script src="/js/starRate.js"></script>
+        <script>
+            $(function () {
+                var star1 = createStarRate(3.2);
+                $('.box1').html(star1);
+
+                var star2 = createStarRate(4.5);
+                $('.box2').html(star2);
+
+                var star3 = createStarRate(2.6);
+                $('.box3').html(star3);
+
+                //扩展
+                // $('.box1').createStarRate(3.6)
+            })
+        </script>
+        </body>
+        </html>
